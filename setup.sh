@@ -105,6 +105,8 @@ brew install --cask google-chrome
 brew install --cask spotify
 brew install --cask mattermost
 brew install --cask bitwarden
+brew install --cask caffeine
+brew install --cask canva
 echo "Installed casks."
 
 brew cleanup
