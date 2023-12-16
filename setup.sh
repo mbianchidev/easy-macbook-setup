@@ -98,6 +98,7 @@ echo "Installed formulae."
 
 # Install casks
 echo "Installing casks..."
+brew install --cack docker
 brew install --cask dbeaver-community
 brew install --cask visual-studio-code
 brew install --cask slack
