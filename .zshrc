@@ -104,6 +104,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll="ls -lha"
 alias k="kubectl"
+alias py="python3"
+alias pip="pip3"
 
 export ZSH=$HOME/.oh-my-zsh
 
