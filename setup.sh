@@ -114,7 +114,8 @@ brew cleanup
 echo "Cleanup completed."
 
 # if there is no zshrc file
-if [ ! -f ~/.zshrc ]; then
+if [ ! -f ~/.zshrc ]
+then
   echo "zshrc config not found, installing oh-my-zsh and powerlevel10k theme"
   # Create .zshrc file
   touch ~/.zshrc
@@ -128,9 +129,11 @@ if [ ! -f ~/.zshrc ]; then
 fi
 
 if [ -f ~/.zshrc ]
+then
   # Substituting predefined zshrc with my own
   cd ~
   rm -f .zshrc
   wget https://raw.githubusercontent.com/mbianchidev/easy-macbook-setup/main/.zshrc
+  exec zsh
   echo "Setup complete, please restart your terminal."
 fi
