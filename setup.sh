@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # check if brew is installed
 if ! command -v brew &> /dev/null
 then
