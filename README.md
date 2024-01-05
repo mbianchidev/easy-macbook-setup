@@ -7,4 +7,6 @@ Simply run this on your terminal and sit back.
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mbianchidev/easy-macbook-setup/main/setup.sh)"
 ```
 
+Other scripts could be useful as well :D
+
 Enjoy!
