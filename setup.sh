@@ -23,6 +23,7 @@ brew install cffi
 brew install cmake
 brew install corepack
 brew install coreutils
+brew install colordiff
 brew install direnv
 brew install docker
 brew install docker-completion
@@ -38,6 +39,7 @@ brew install git-extras
 brew install git-flow
 brew install gnu-sed
 brew install go
+brew install gralde
 brew install grep
 brew install groonga
 brew install gzip
@@ -54,6 +56,7 @@ brew install libunistring
 brew install libuv
 brew install lz4
 brew install m4
+brew install make
 brew install mariadb
 brew install mecab
 brew install mecab-ipadic
@@ -84,6 +87,7 @@ brew install six
 brew install sqlite
 brew install tmux
 brew install unzip
+brew install watch
 brew install webp
 brew install wget
 brew install xz
