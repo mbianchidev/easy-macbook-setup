@@ -41,7 +41,7 @@ brew install git-extras
 brew install git-flow
 brew install gnu-sed
 brew install go
-brew install gralde
+brew install gradle
 brew install grep
 brew install groonga
 brew install gzip
@@ -54,6 +54,8 @@ brew install kubectl
 brew install kubernetes-cli
 brew install libidn2
 brew install libnghttp2
+brew install libpq
+brew link --force libpq
 brew install libunistring
 brew install libuv
 brew install lz4
@@ -87,6 +89,7 @@ brew install python@3.12
 brew install readline
 brew install six
 brew install sqlite
+brew install telnet
 brew install tmux
 brew install unzip
 brew install watch
