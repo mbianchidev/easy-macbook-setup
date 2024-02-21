@@ -76,6 +76,7 @@ brew install openjdk
 brew install openssl
 brew install openssl@3
 brew install opentofu
+brew install orbstack
 brew install pcre
 brew install pcre2
 brew install pkg-config
@@ -87,6 +88,7 @@ brew install python-setuptools
 brew install python@3.11
 brew install python@3.12
 brew install readline
+brew install redis
 brew install six
 brew install sqlite
 brew install telnet
