@@ -27,6 +27,7 @@ brew install corepack
 brew install coreutils
 brew install colordiff
 brew install direnv
+brew install dive
 brew install docker
 brew install docker-completion
 brew install docker-compose
@@ -120,6 +121,15 @@ brew install --cask bitwarden
 brew install --cask caffeine
 brew install --cask canva
 echo "Installed casks."
+
+sudo ln -s "/Users/$(whoami)/.orbstack/run/docker.sock" "/Users/$(whoami)/.docker/run/docker.sock"
+
+# Create a parallel multi-platform builder
+docker buildx create --name mybuilder --use
+# Make "buildx" the default
+docker buildx install
+# Build for multiple platforms
+docker build --platform linux/amd64,linux/arm64 .
 
 brew cleanup
 echo "Cleanup completed."
