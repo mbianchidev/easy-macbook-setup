@@ -125,7 +125,7 @@ echo "Installed casks."
 sudo ln -s "/Users/$(whoami)/.orbstack/run/docker.sock" "/Users/$(whoami)/.docker/run/docker.sock"
 
 # Create a parallel multi-platform builder
-docker buildx create --name mybuilder --use
+docker buildx create --name custom_builder --use
 # Make "buildx" the default
 docker buildx install
 # Build for multiple platforms
