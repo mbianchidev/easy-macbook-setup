@@ -65,6 +65,7 @@ brew install make
 brew install mariadb
 brew install mecab
 brew install mecab-ipadic
+brew install mongosh
 brew install mpdecimal
 brew install msgpack
 brew install mysql-client
