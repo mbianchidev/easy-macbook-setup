@@ -112,6 +112,7 @@ echo "Installed formulae."
 # Install casks
 echo "Installing casks..."
 brew install --cack docker
+brew install --cask orbstack
 brew install --cask dbeaver-community
 brew install --cask visual-studio-code
 brew install --cask slack
@@ -131,6 +132,11 @@ docker buildx create --name custom_builder --use
 docker buildx install
 # Build for multiple platforms
 docker build --platform linux/amd64,linux/arm64 .
+
+# Switch to OrbStack
+docker context use orbstack
+# Switch to Docker Desktop (uncomment)
+# docker context use desktop-linux
 
 brew cleanup
 echo "Cleanup completed."
