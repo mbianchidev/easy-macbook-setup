@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cd ~
+  
 # check if brew is installed
 if ! command -v brew &> /dev/null
 then
@@ -15,13 +17,10 @@ echo "Installing formulae..."
 brew install autoconf
 brew install autojump
 brew install awk
-brew install cmake
 brew install coreutils
 brew install colordiff
 brew install direnv
 brew install dive
-brew install docker
-brew install docker-completion
 brew install docker-compose
 brew install fzf
 # To install useful key bindings and fuzzy completion:
@@ -105,7 +104,11 @@ brew install --cask dbeaver-community
 brew install --cask visual-studio-code
 brew install --cask spotify
 brew install --cask canva
+brew install --cask caffeine
+brew install --cask cmake
 echo "Installed casks."
+
+# --- TODO fix this orbstack conf ---
 
 sudo ln -s "/Users/$(whoami)/.orbstack/run/docker.sock" "/Users/$(whoami)/.docker/run/docker.sock"
 
@@ -121,15 +124,18 @@ docker context use orbstack
 # Switch to Docker Desktop (uncomment)
 # docker context use desktop-linux
 
+# --- TODO fix this orbstack conf ---
+
 brew cleanup
 echo "Cleanup completed."
+
+cd ~
 
 # if there is no zshrc file
 if [ ! -f ~/.zshrc ]
 then
   echo "zshrc config not found, installing oh-my-zsh and powerlevel10k theme"
   # Create .zshrc file
-  touch ~/.zshrc
 
   # Install oh-my-zsh
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -137,6 +143,9 @@ then
   # Oh-my-zsh theme
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
   echo "Ohmyzsh and powerlevel10k are correctly installing, setting up..."
+  wget https://raw.githubusercontent.com/mbianchidev/easy-macbook-setup/main/.zshrc
+  exec zsh
+  echo "ZSH freshly installed - Setup complete, please restart your terminal."
 fi
 
 if [ -f ~/.zshrc ]
@@ -146,5 +155,5 @@ then
   rm -f .zshrc
   wget https://raw.githubusercontent.com/mbianchidev/easy-macbook-setup/main/.zshrc
   exec zsh
-  echo "Setup complete, please restart your terminal."
+  echo "ZSH reconfigured - Setup complete, please restart your terminal."
 fi
