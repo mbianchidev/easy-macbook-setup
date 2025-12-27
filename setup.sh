@@ -67,7 +67,7 @@ brew install openjdk
 brew install openssl
 brew install openssl@3
 brew install opentofu
-brew install orbstack
+# brew install orbstack
 brew install pcre
 brew install pcre2
 brew install pkg-config
@@ -106,6 +106,10 @@ brew install --cask spotify
 brew install --cask canva
 brew install --cask caffeine
 brew install --cask cmake
+brew install --cask utm
+brew install --cask obsidian
+brew install --cask slack
+brew install --cask headlamp
 echo "Installed casks."
 
 # --- TODO fix this orbstack conf ---
